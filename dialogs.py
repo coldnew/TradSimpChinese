@@ -7,9 +7,11 @@ __license__   = 'GPL v3'
 import os
 
 try:
-    from PyQt5.Qt import (Qt, QVBoxLayout, QLabel, QComboBox, QApplication, QSizePolicy,
+    from PyQt5 import QtCore, QtGui, QtWidgets
+    from PyQt5.QtCore import (Qt, QSize)
+    from PyQt5.QtWidgets import (QVBoxLayout, QLabel, QComboBox, QApplication, QSizePolicy,
                       QGroupBox, QButtonGroup, QRadioButton, QDialogButtonBox, QHBoxLayout,
-                      QProgressDialog, QSize, QDialog, QCheckBox, QSpinBox, QScrollArea, QWidget)
+                      QProgressDialog, QDialog, QCheckBox, QSpinBox, QScrollArea, QWidget)
 except ImportError:
     from PyQt4.Qt import (Qt, QVBoxLayout, QLabel, QComboBox, QApplication, QSizePolicy,
                       QGroupBox, QButtonGroup, QRadioButton, QDialogButtonBox, QHBoxLayout,

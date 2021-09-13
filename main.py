@@ -9,7 +9,10 @@ import re, os.path
 from css_parser import  css, stylesheets
 
 try:
-    from PyQt5.Qt import Qt, QAction, QDialog, QApplication, QCursor
+    from PyQt5 import QtCore, QtGui, QtWidgets
+    from PyQt5.QtCore import (Qt)
+    from PyQt5.QtGui import (QCursor)
+    from PyQt5.QtWidgets import (QAction, QDialog, QApplication)
 except:
     from PyQt4.Qt import Qt, QAction, QDialog, QApplication, QCursor
 

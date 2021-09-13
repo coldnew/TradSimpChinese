@@ -17,9 +17,9 @@ __docformat__ = 'restructuredtext en'
 import os
 
 try:
-    from PyQt5.Qt import (Qt, QVBoxLayout, QApplication,
-                      QDialogButtonBox, QHBoxLayout,
-                      QProgressDialog, QListWidget, QTimer, QDialog)
+    from PyQt5 import QtCore, QtGui, QtWidgets
+    from PyQt5.QtCore import (Qt, QTimer)
+    from PyQt5.QtWidgets import (QVBoxLayout, QApplication, QDialogButtonBox, QHBoxLayout, QProgressDialog, QListWidget, QDialog)                                 
 except ImportError:
     from PyQt4.Qt import (Qt, QVBoxLayout, QApplication,
                       QDialogButtonBox, QHBoxLayout,
